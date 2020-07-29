@@ -1,4 +1,8 @@
+let timePickerOpt = {
+    twelveHour: false
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     let elems = document.querySelectorAll('.timepicker');
-    let instances = M.Timepicker.init(elems);
+    let instances = M.Timepicker.init(elems, timePickerOpt);
 });
