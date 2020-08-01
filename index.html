@@ -24,22 +24,53 @@
         <div class="container valign-wrapper">
             <div class="row">
                 <div class="col s10 center-align">
-                    <h3><span class="teal-text text-lighten-2">WHEN SHOULD I FALL ASLEEP?</span></h3>
+                    <h3 class="teal-text text-lighten-2">WHEN SHOULD I FALL ASLEEP?</h3>
                     <br><br><br>
-                    <span class="teal-text text-lighten-4">이 페이지는 당신이 잠들기 좋은 시간을 추천해 줍니다.</span>
+                    <p class="teal-text text-lighten-4">이 페이지는 당신이 잠들기 좋은 시간을 추천해 줍니다.</p>
                     <br><br><br>
-                    <span class="teal-text text-lighten-3">당신이 일어날 시간은?</span>
+                    <p class="teal-text text-lighten-3">당신이 일어날 시간은?</p>
                     <br><br>
                     <div class="divider"></div>
                     <input type="text" class="timepicker white-text center-align">
                     <br><br><br>
-                        <a class="waves-effect waves-light btn-large"><i class="fa fa-bed"></i> 계산하다</a>
+                        <a class="waves-effect waves-light btn-large" onclick="calculateTime();"><i class="fa fa-bed"></i> 계산하다</a>
                     <br><br><br>
-                        <p class="teal-text text-lighten-4">좋은 잠을 자는 것 만으로도 삶이 풍요로워집니다.<br><br>
+                        <p class="teal-text text-lighten-4">좋은 잠을 자는 것만으로도 삶이 풍요로워집니다.<br><br>
                         잠은 삶의 풍요로운 안식이며, 지친 몸을 회복시키는 에너지 충전 시간으로 우리의 정신적, 신체적 안녕과 밀접한 관계가 있습니다.<br><br>
-                        몇시간을 자느냐보다는 수면의 질이 중요합니다. 보통 성인의 최적 수면 시간을 8시간 정도로 보고 있지만 하루 4~5시간만 자도 충분한 사람들이 있습니다.
+                        몇 시간을 자느냐보다는 수면의 질이 중요합니다. 보통 성인의 최적 수면 시간을 8시간 정도로 보고 있지만 하루 4~5시간만 자도 충분한 사람들이 있습니다.
                         </p>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal" id="result-modal">
+            <div class="modal-content center-align">
+                <h4 class="teal-text text-lighten-2">추천되는 취침 시간</h4>
+                <br><br>
+                <p style="font-size: large;">
+                    <span class="recommand-text red-text">00:00</span>, 
+                    <span class="recommand-text red-text">00:00</span>, 
+                    <span class="recommand-text">00:00</span>, 
+                    <span class="recommand-text teal-text text-lighten-2">00:00</span><br><br>
+                    <span class="recommand-text teal-text text-lighten-2">00:00</span>, 
+                    <span class="recommand-text teal-text text-lighten-2">00:00</span>, 
+                    <span class="recommand-text red-text">00:00</span>, 
+                    <span class="recommand-text red-text">00:00</span>
+                </p>
+                <br><br>
+                <p class="teal-text text-lighten-1">
+                    짧은 수면 시간은 추천하지 않습니다. <br>
+                    그렇다고 너무 긴 수면 시간도 추천하지 않습니다. <br><br>
+                    성인의 경우 하루에 7 ~ 8시간 정도 자는 것이 적절합니다.
+                </p>
+                <br><br>
+                <p>
+                    피곤한 당신을 위해 추천하는 커피를 마시는 시간은 <span class="coffee-time teal-text text-lighten-2">00:00</span> 입니다.
+                    <br><br>
+                    아침에 잠에서 깨면 우리 몸에서는 코리트솔(cortisol) 호르몬이 분비됩니다.<br>
+                    코르티솔은 신체가 외부에 자극이나 스트레스에 대항하도록 활기를 불어넣는 작용을 하는 호르몬입니다.<br>
+                    잠에서 깨고 최소 2시간 30분 정도가 지난 뒤 커피를 마셔야 불필요한 스트레스를 피할 수 있습니다.
+                </p>
             </div>
         </div>
     </body>
